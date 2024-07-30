@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="">Nafees Ahamed</a>
+        </div>
+        <div class="right">
+            <a href="https://github.com/" rel="no-referrer no-opener" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span>Github</span>
+            </a>
+
+            <a href="https://linkedin.com/" rel="no-referrer no-opener" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Linkedin</span>
+            </a>
+
+            <a href="mailto:nafeesahamed006@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="text">
+            <h2>Hi I'm Nafees👋</h2>
+            <p>
+                Passionate frontend web developer with a keen eye for design and a love for creating seamless user experiences. Skilled in HTML, CSS, and JavaScript, I transform concepts into responsive, visually engaging websites. Dedicated to continuous learning and innovation in the ever-evolving landscape of web development.
+            </p>
+            <div class="links">
+                <a href="#skills">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        <div class="headshot">
+            <img src="./images/nafees.jpg" alt="profile image">
+        </div>
+        
+    </section>
+
+    <section id="Skills" class="skill-section">
+        <h2>Skills</h2>
+        <div class="cells">
+            <div class="cell">
+                <img src="./images/html-5.png"alt="html logo">
+                <span>HTML</span>
+            </div>
+            <div class="cell">
+                <img src="./images/css-3.png"alt="css logo">
+                <span>CSS</span>
+            </div>
+            <div class="cell">
+                <img src="./images/js.png"alt="javascript logo">
+                <span>JavaScript</span>
+            </div>
+            <div class="cell">
+                <img src="./images/python.png"alt="python logo">
+                <span>PYTHON</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+
+        <div class="group">
+            <div class="text">
+                Feel free to reach out if you have any questions or need further information.
+            I'm always open to discussing new opportunities and collaborations.
+            Let's connect and explore how my skills can benefit your team.
+            Looking forward to hearing from you soon!
+            </div>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" cols="10" rows="10"></textarea>
+
+                <button type="submit">Send message</button>
+            </form>
+
+        </div>
+    </section>
+    
+</body>
+</html>

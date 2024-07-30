@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1A3636;
+    max-width: 1400px;
+    padding: 0 auto;
+}
+a {
+    color:  #ECFFE6;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+nav .left a {
+    color: #ECFFE6;
+    font-size: 22px;
+    font-weight: 600;
+}
+nav .right a {
+    color: #ECFFE6;
+    margin: 0 10px;
+}
+nav .right a:last-child{
+    color:  #1A3636;
+    background-color: #ECFFE6;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav .right a span{
+    margin-left: 5px;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+}
+.hero-section .text{
+    flex: 5;
+    color: #ECFFE6;
+}
+.hero-section .text h2{
+    font-size: 45px;
+}
+.hero-section .text .links{
+    margin-top: 25px;
+}
+.hero-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid;
+    color: #7BD3EA;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+.hero-section .text .links a:hover {
+    color:  #ECFFE6;
+    border: 2px solid;
+}
+.hero-section .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.hero-section .headshot img{
+    width: 315px;
+    border-radius: 1000px;
+}
+
+.skill-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+    color: #ECFFE6;
+}
+.skill-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+.skill-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid  #ECFFE6;
+    border-radius: 5px;
+    gap: 10px;
+}
+.skill-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skill-section .cells .cell span{
+    font-size: 18px;
+}
+
+.contact-section{
+    padding: 0 50px;
+    margin-bottom:100px;
+    color: #ECFFE6;
+}
+.contact-section h2{
+    font-size: 35px;
+}
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+.contact-section .group form{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'Poppins',sans-serif;
+    border: 2px solid  #7BD3EA;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+.contact-section .group form button{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    color: #ECFFE6;
+    background-color:#7BD3EA;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+}
+
+
+
+@media(max-width:850px){
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+}
+@media(max-width:740px){
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-section .headshot img{
+        width: 250px;
+
+    }
+    .contact-section .group{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px){
+    nav{
+        padding: 0 20px;
+    }
+    nav .right a{
+        font-size: 22px;
+    }
+    nav .right a:last-child{
+        color:  #ECFFE6;
+        background-color: transparent;
+        padding: 0;
+    }
+    nav .right a span{
+        display: none;
+    }
+    .hero-section{
+        padding: 0 20px;
+    }
+    .hero-section .text h2{
+        font-size: 30px;
+    }
+    .skill-section{
+        padding: 0 20px;
+    }
+    .skill-section .cells .cell span{
+        font-size: 16px;
+    }
+    .contact-section{
+        padding: 0 20px;
+    }
+
+}
